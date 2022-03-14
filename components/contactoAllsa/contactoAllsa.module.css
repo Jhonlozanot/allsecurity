@@ -1,0 +1,143 @@
+.contenedor__contacto {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.contenedor__formulario {
+  width: 50%;
+  height: auto;
+  padding: 3rem;
+}
+.formulario {
+  margin: 2rem;
+}
+.formulario h1 {
+  font-size: 35px;
+}
+.sociales {
+  position: absolute;
+  left: 1rem;
+  bottom: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 10rem;
+  width: 3rem;
+  padding: 0.8rem;
+  background-color: #c13036;
+}
+.sociales img {
+  width: 100%;
+  height: 100%;
+}
+
+.formulario__content {
+  display: flex;
+  flex-direction: column;
+  color: #8e8e8e;
+  font-size: 15px;
+}
+.formulario__content button {
+  width: 20%;
+  line-height: 30px;
+  background-color: #c13036;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+.formulario__column {
+  display: flex;
+  flex-direction: row;
+}
+.formulario__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.formulario__row2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-right: 1rem;
+}
+.formulario__row input,
+.formulario__row2 input {
+  line-height: 2rem;
+}
+.formulario__row input,
+.formulario__row2 input,
+.formulario__row textarea {
+  border: 1px #bdbdbd solid;
+}
+.formulario__row textarea {
+  height: 6rem;
+}
+.formulario__content ::placeholder {
+  color: #bdbdbd;
+}
+.contenedor__mapa {
+  background-color: #c13036;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .contenedor__contacto {
+    flex-direction: column;
+  }
+  .contenedor__formulario {
+    width: 100%;
+    padding: 0;
+  }
+  .contenedor__mapa {
+    background-color: #06153d;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .contenedor__mapa {
+    display: none;
+  }
+  .contenedor__formulario {
+    width: 100%;
+    padding: 0;
+  }
+  .formulario__column {
+    flex-direction: column;
+  }
+  .formulario__content button {
+    width: 30%;
+    text-align: center;
+    align-self: center;
+  }
+}
+.mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.mapa p {
+  background-color: black;
+  line-height: 30px;
+  margin-top: 0;
+  color: white;
+  width: 500px;
+  padding-left: 1rem;
+}
+
+.formulario__captcha {
+  margin-top: 1rem;
+}

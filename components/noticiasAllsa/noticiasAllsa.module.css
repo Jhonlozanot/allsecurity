@@ -1,0 +1,280 @@
+.noticia_main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5%;
+}
+.noticia_main img {
+  width: 100%;
+  max-height: 40rem;
+}
+.box {
+  position: absolute;
+  width: 100%;
+  top: 15rem;
+  height: 22rem;
+  background-color: rgba(248, 8, 16, 0.5);
+}
+
+.title {
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title h2 {
+  margin-top: -65px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 70px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.title p {
+  font-style: normal;
+  margin: 0;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.subtitle {
+  background-color: #3c3c3c;
+  color: white;
+  padding-left: 10%;
+  padding-top: 0.5%;
+  vertical-align: middle;
+}
+
+.subtitle p {
+  margin: 0;
+}
+
+.desc {
+  background-color: #c13036;
+  width: 100%;
+  height: 4rem;
+  margin-top: -10px;
+}
+
+.desc p {
+  color: white;
+  margin: 0;
+  text-align: justify;
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+  position: relative;
+}
+.izquierdo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.derecho {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.child_izquierdo {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.child_izquierdo img {
+  height: 15rem;
+  width: 15rem;
+}
+
+.child_izquierdo .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.child_izquierdo .text h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.child_izquierdo .text p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 0;
+}
+
+.child_izquierdo .option {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.child_izquierdo .option p {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.child_izquierdo .option a {
+  background-color: #171d35;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 5%;
+  text-decoration: none;
+}
+
+.child_derecho {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 10rem;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0px 0.8rem 1.5rem rgb(0 0 0 / 25%);
+}
+
+.child_derecho p {
+  margin: 0;
+  padding: 1rem 0 0.2rem 0rem;
+}
+.child_derecho_content {
+  display: flex;
+}
+.child_derecho_content img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.child_derecho_content p {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+.linea {
+  width: 100%;
+  height: 2px;
+  align-self: center;
+  background-color: #5a5a5a;
+  margin-bottom: 5px;
+  padding: 0 1rem;
+}
+.figura {
+  position: absolute;
+  top: -4.7rem;
+  display: flex;
+  height: 3rem;
+  margin-top: -1.6rem;
+  z-index: 2;
+  margin-bottom: 2rem;
+}
+.servis {
+  border: 1px #c13036 solid;
+  background-color: #c13036;
+  width: 18rem;
+  padding: 13px 26px;
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0px 0.8rem 1.5rem rgb(0 0 0 / 25%);
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 2rem solid #c13036;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .noticias {
+    flex-direction: column;
+  }
+
+  .izquierdo {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+  }
+  .figura {
+    top: 1rem;
+  }
+  .box {
+    top: 8rem;
+    height: 18rem;
+  }
+  .title h2 {
+    margin: 0;
+  }
+  .derecho {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .desc {
+    display: none;
+  }
+  .title h2 {
+    font-size: 2rem;
+  }
+
+  .noticia_main {
+    width: 100%;
+  }
+  .noticias {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .izquierdo {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+  }
+  .figura {
+    top: 1rem;
+  }
+  .box {
+    top: 4rem;
+    height: 8rem;
+  }
+  .title h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .title p {
+    padding: 1rem;
+    font-size: 13px;
+  }
+  .derecho {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .child_izquierdo {
+    flex-direction: column;
+  }
+  .child_izquierdo img {
+    width: 100%;
+  }
+  .child_izquierdo .text {
+    padding: 1rem;
+  }
+  .child_derecho {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
